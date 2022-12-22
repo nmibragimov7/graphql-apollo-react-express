@@ -19,7 +19,7 @@ const Users = () => {
     }, [refetch]);
 
     return (
-        <div className="py-8">
+        <div>
             <NavLink
                 className="inline-block bg-primary-blue hover:bg-primary-blue/90 disabled:bg-primary-blue/90 shadow text-white px-8 py-4 mb-10"
                 to={'/users/create'}>Добавить пользователя:</NavLink>

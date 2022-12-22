@@ -32,7 +32,7 @@ const CreateUser = () => {
     });
 
     return (
-        <div className="flex flex-col gap-4 p-8">
+        <div className="flex flex-col gap-4 px-8">
             <h3 className="text-2xl font-bold text-primary-blue">Добавить пользователя</h3>
             <input name="username"
                    className={styles.input}

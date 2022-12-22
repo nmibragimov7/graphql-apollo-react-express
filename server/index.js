@@ -36,7 +36,6 @@ const root = {
     // },
     getUsers: () => users,
     getUser: ({id}) => {
-        console.log(id)
         return users.find(user => user.id === id)
     },
     createUser: ({input}) => {
@@ -58,5 +57,5 @@ app.use('/graphql', graphqlHTTP({
     schema,
     rootValue: root
 }))
-
-app.listen(5000, () => console.log('server started on port 5000'));
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log('server started on port ' + port));
